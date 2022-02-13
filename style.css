@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 1200px;
+    height: auto;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 清除浮动 */
+.clearfix::before,.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.header {
+    height: 42px;
+    /* background-color: pink; */
+    margin: 30px auto;
+}
+
+.logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+}
+
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    color: #050505;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+
+.search {
+    float: left;
+    width: 405px;
+    height: 42px;
+    background-color: skyblue;
+    margin-left: 70px;
+}
+
+.search input {
+    float: left;
+    width: 335px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    color: #bfbfbf;
+    font-style: 14px;
+    padding-left: 15px;
+}
+
+.search button {
+    float: left;
+    width: 53px;
+    height: 42px;
+    /* 按钮button默认有个边框 */
+    border: 0;
+    background: url(./images/fa-search.png);
+}
+
+.user {
+    float: right;
+    line-height: 42px;
+    margin-right: 28px;
+    font-style: 14px;
+    color: #666;
+    vertical-align: middle;
+}
+
+/* banner区域 */
+.banner {
+    height: 421px;
+    background-color: #1c036c;
+}
+
+ .banner .w {
+    height: 421px;
+    margin: auto;
+    background: url(./images/banner2.png) no-repeat center center;
+} 
+
+.subnav {
+    float: left;
+    width: 190px;
+    height: 421px;
+    background: rgba(0,0,0,.3);
+}
+
+.subnav ul li a {
+    line-height: 45px;
+    padding-left: 15px;
+    font-style: 14px;
+    color: #fff;
+}
+
+.subnav ul li a  span {
+    float: right;
+    margin-right: 5px;
+}
+
+.subnav ul li a:hover {
+    color: #00a4ff;
+}
+
+.course {
+    float: right;
+    height: 300px;
+    width: 230px;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.course h3 {
+    height: 50px;
+    width: 230px;
+    background-color: #9bceea;
+    font-style: 18px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.bd {
+    padding: 0 20px;
+}
+
+.bd ul li {
+    padding: 14px 0;
+    border-bottom: 1px solid #000;
+}
+
+.course .bd ul li h4 {
+    color: #4e4e4e;
+    font-size: 14px;
+}
+
+.course .bd ul li p{
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.bd .more{
+    display: block;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 38px;
+    color: #00a4ff;
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+/* 精品推荐模块 */
+.goods {
+    height: 60px;
+    margin: auto;
+    background-color: #fff;
+    margin-top: 10px;
+    box-shadow: 0px 2px 3px 3px rgba(0,0,0,.1);
+    /* 行高会继承给三个孩子 */
+    line-height: 60px;
+}
+
+.goods ul{
+    float: left;
+    margin-left: 30px;
+}
+
+.goods ul li {
+    float: left;
+}
+
+.goods ul li a{
+    padding: 0 30px;
+    font-size: 16px;
+    color: #050505;
+    border-left: 1px solid #ccc;
+}
+
+.goods h3 {
+    float: left;
+    color: #00a4ff;
+    margin-left: 30px;
+}
+
+.mod {
+    float: right;
+    color: #00a4ff;
+    font-size: 14px;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+.box {
+    height: 600px;
+    padding-top: 30px;
+    margin: auto;
+}
+
+.box-hd {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.box-hd p {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+
+.box-hd a {
+    float: right;
+    font-size: 12px;
+    margin-right: 30px;
+    color: #a5a5a5;
+}
+
+.box-bd {
+    margin: auto;
+}
+.box-bd ul li img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    width: 232px;
+    height: 271px;
+}
+
+.box-bd ul li .last {
+    margin-right: 0;
+}
+
+.footer {
+    height: 150px;
+    background-color: #ffffff;
+}
+
+.footer .w{
+    margin: auto;
+    padding-top: 15px;
+}
+
+.copyright {
+    float: left;
+    font-size: 12px;
+    color: #666666;
+}
+
+.app {
+    display: block;
+    margin-top: 20px;
+    width: 118px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+}
+
+.links {
+    float: right;
+}
+
+.links .links-left,
+.links-mid,
+.links-right {
+    float: left;
+    padding-left: 150px;
+    padding-right: 20px;
+}
+
+.links .links-left h4,
+.links-mid h4,
+.links-right h4 {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.links .links-left ul,
+.links-mid ul,
+.links-right ul {
+    color: #333333;
+    font-size: 12px;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
